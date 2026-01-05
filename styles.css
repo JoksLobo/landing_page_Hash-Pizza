@@ -38,4 +38,22 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
+  background: var(--bg);
+}
+
+section {
+  padding: 2rem 7%;
+}
+
+.heading {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
+
+  & span {
+    text-transform: uppercase;
+    color: var(--main-color);
+  }
 }
