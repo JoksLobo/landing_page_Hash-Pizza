@@ -207,3 +207,51 @@ section {
     }
   }
 }
+
+/* MENU */
+.menu {
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+
+    & .box {
+      padding: 5rem;
+      text-align: center;
+      border: var(--border);
+      background: var(--bg-card);
+
+      &:hover {
+        background: #fff;
+
+        & h3,
+        .price {
+          color: #0c0c14;
+        }
+      }
+
+      & img {
+        height: 18rem;
+        border-radius: 100%;
+      }
+
+      & h3 {
+        color: #fff;
+        font-size: 2rem;
+        padding: 1rem 0;
+      }
+
+      & .price {
+        color: #fff;
+        font-size: 2.5rem;
+        padding: 0.5rem 0;
+
+        & span {
+          font-size: 1.5rem;
+          text-decoration: line-through;
+          font-weight: lighter;
+        }
+      }
+    }
+  }
+}
